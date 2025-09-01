@@ -2,8 +2,8 @@
 
 ## 環境構築
 **Dockerビルド**
-1. `git clone git@github.com:git@github.com:Estra-Coachtech/coachtech-Checktest-mogitate.git
-2. cd coachtech-Checktest-mogitate
+1. `git@github.com:S185900/coachtech-flea_market_app.git`
+2. cd coachtech-flea_market_app
 3. DockerDesktopアプリを立ち上げる
 4. `docker-compose up -d --build`
 
@@ -49,9 +49,9 @@ php artisan storage:link
 ```
 
 ## 使用技術(実行環境)
-- PHP8.3.0
-- Laravel8.83.27
-- MySQL8.0.26
+- PHP 8.1.33
+- Laravel 8.83.8
+- MySQL　8.0.26
 
 ## ER図
 ![alt](er.drawio.png)
@@ -60,6 +60,3 @@ php artisan storage:link
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
 
-## トラブルシューティング
-- ダミーダミー
-- ダミーダミー
