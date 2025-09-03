@@ -28,4 +28,15 @@ class AddressRequest extends FormRequest
             'address' => 'required|string',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'postal_code.required' => '郵便番号は必須です',
+            'postal_code.regex' => '郵便番号は「XXX-XXXX」の形式で入力してください',
+
+            'address.required' => '住所は必須です',
+            'address.string' => '住所は文字列である必要があります',
+        ];
+    }
 }

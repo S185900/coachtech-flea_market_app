@@ -30,4 +30,25 @@ class RegisterRequest extends FormRequest
             'password_confirmation' => 'required|string|min:8|same:password',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'username.required' => 'お名前を入力してください',
+            'username.string' => 'ユーザー名は文字列である必要があります。',
+            'username.max' => 'ユーザー名は20文字以内で入力してください。',
+
+            'email.required' => 'メールアドレスを入力してください',
+            'email.email' => '有効なメールアドレスを入力してください。',
+
+            'password.required' => 'パスワードを入力してください',
+            'password.string' => 'パスワードは文字列である必要があります',
+            'password.min' => 'パスワードは8文字以上で入力してください',
+
+            'password_confirmation.required' => 'パスワード確認は必須です',
+            'password_confirmation.string' => 'パスワード確認は文字列である必要があります。',
+            'password_confirmation.min' => 'パスワード確認は8文字以上で入力してください。',
+            'password_confirmation.same' => 'パスワードとパスワード確認が一致しません。',
+        ];
+    }
 }

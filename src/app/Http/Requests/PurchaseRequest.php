@@ -28,4 +28,12 @@ class PurchaseRequest extends FormRequest
             'delivery_address' => 'required',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'payment_method.required' => '支払い方法は必須です',
+            'delivery_address.required' => '配送先住所は必須です',
+        ];
+    }
 }
